@@ -1,3 +1,44 @@
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin twentyround {
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+}
+
+@mixin placeholder {
+	::-webkit-input-placeholder { /* WebKit browsers */
+    color: #3c3853;
+    font-style: italic;
+    text-transform: uppercase;
+	}
+	:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	   color: #3c3853;
+	   font-style: italic;
+	   text-transform: uppercase;
+	   opacity: 1;
+	}
+	::-moz-placeholder { /* Mozilla Firefox 19+ */
+	   color: #3c3853;
+	   font-style: italic;
+	   text-transform: uppercase;
+	   opacity: 1;
+	}
+	:-ms-input-placeholder { /* Internet Explorer 10+ */
+	   color: #3c3853;
+	   font-style: italic;
+	   text-transform: uppercase;
+	}
+}
+
+@mixin cssreset {
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -45,4 +86,6 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
 }
