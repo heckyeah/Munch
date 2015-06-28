@@ -3,13 +3,14 @@
 $mainColor: #282539;
 $secondColor: #1e1e1e;
 $secondColorHover: #232323;
-$backgrounColor: #e6e6e6;
+$backgroundColor: #e6e6e6;
 $offColor: #e6e6e6;
 
 @include cssreset;
 
 body {
 	font-family: 'Open Sans', sans-serif;
+	background-color: $backgroundColor;
 }
 
 .control_bar {
@@ -84,7 +85,9 @@ body {
 
 nav {
 	background-color: $secondColor;
-	width: 300px;
+	width: 20%;
+	height: 100%;
+	float: left;
 	ul {
 		li {
 			a:link,
@@ -98,6 +101,86 @@ nav {
 			}
 			a:hover {
 				background-color: $secondColorHover;
+			}
+		}
+	}
+}
+article {
+	float: left;
+	padding: 2%;
+	width: 46%;
+	.post_details {
+		float: left;
+		.user_post {
+			background-color: #fff;
+			padding: 10px;
+			float: left;
+			@include clearfix;
+			.avatar {
+				float: left;
+				img {
+					width: 70px;
+					height: 70px;
+				}
+			}
+			.profile_post {
+				float: left;
+				margin: 0 0 0 20px;
+				min-width: 300px;
+				h1 {
+					text-transform: uppercase;
+					font-size: 2em;
+					font-weight: 700;
+					margin: 10px 0 0 0;
+					a:link,
+					a:visited {
+						text-decoration: none;
+						color: $secondColor;
+					}
+				}
+				.rank {
+					font-size: 0.775em;
+					line-height: 2;
+				}
+			}
+		}
+		.user_rating,
+		.user_cost {
+			float: left;
+			width: 70px;
+			.rating {
+				text-align: center;
+				height: 90px;
+				.likes {
+					display: block;
+					padding: 10px;
+					color: #fff;
+					font-size: 3em;
+				}
+				.like_number {
+					color: $offColor;
+					font-size: 0.775em;
+				}
+			}
+		}
+		.user_rating { background-color: $mainColor; }
+		.user_cost { background-color: $secondColor; }
+	}
+	.content {
+		clear: both;
+		.heading {
+			h1 {
+				font-size: 2em;
+				font-weight: 700;
+				text-transform: uppercase;
+				line-height: 1.5;
+			}
+		}
+		.content_details {
+			p {
+				font-size: 0.775em;
+				line-height: 1.4;
+				margin-bottom: 5px;
 			}
 		}
 	}

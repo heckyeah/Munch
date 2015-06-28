@@ -46,7 +46,8 @@ table {
   border-spacing: 0; }
 
 body {
-  font-family: 'Open Sans', sans-serif; }
+  font-family: 'Open Sans', sans-serif;
+  background-color: #e6e6e6; }
 
 .control_bar {
   background-color: #282539;
@@ -131,7 +132,9 @@ body {
 
 nav {
   background-color: #1e1e1e;
-  width: 300px; }
+  width: 20%;
+  height: 100%;
+  float: left; }
   nav ul li a:link,
   nav ul li a:visited {
     color: #e6e6e6;
@@ -142,5 +145,74 @@ nav {
     font-size: 0.875em; }
   nav ul li a:hover {
     background-color: #232323; }
+
+article {
+  float: left;
+  padding: 2%;
+  width: 46%; }
+  article .post_details {
+    float: left; }
+    article .post_details .user_post {
+      background-color: #fff;
+      padding: 10px;
+      float: left; }
+      article .post_details .user_post:after {
+        content: "";
+        display: table;
+        clear: both; }
+      article .post_details .user_post .avatar {
+        float: left; }
+        article .post_details .user_post .avatar img {
+          width: 70px;
+          height: 70px; }
+      article .post_details .user_post .profile_post {
+        float: left;
+        margin: 0 0 0 20px;
+        min-width: 300px; }
+        article .post_details .user_post .profile_post h1 {
+          text-transform: uppercase;
+          font-size: 2em;
+          font-weight: 700;
+          margin: 10px 0 0 0; }
+          article .post_details .user_post .profile_post h1 a:link,
+          article .post_details .user_post .profile_post h1 a:visited {
+            text-decoration: none;
+            color: #1e1e1e; }
+        article .post_details .user_post .profile_post .rank {
+          font-size: 0.775em;
+          line-height: 2; }
+    article .post_details .user_rating,
+    article .post_details .user_cost {
+      float: left;
+      width: 70px; }
+      article .post_details .user_rating .rating,
+      article .post_details .user_cost .rating {
+        text-align: center;
+        height: 90px; }
+        article .post_details .user_rating .rating .likes,
+        article .post_details .user_cost .rating .likes {
+          display: block;
+          padding: 10px;
+          color: #fff;
+          font-size: 3em; }
+        article .post_details .user_rating .rating .like_number,
+        article .post_details .user_cost .rating .like_number {
+          color: #e6e6e6;
+          font-size: 0.775em; }
+    article .post_details .user_rating {
+      background-color: #282539; }
+    article .post_details .user_cost {
+      background-color: #1e1e1e; }
+  article .content {
+    clear: both; }
+    article .content .heading h1 {
+      font-size: 2em;
+      font-weight: 700;
+      text-transform: uppercase;
+      line-height: 1.5; }
+    article .content .content_details p {
+      font-size: 0.775em;
+      line-height: 1.4;
+      margin-bottom: 5px; }
 
 /*# sourceMappingURL=main.css.map */
