@@ -215,4 +215,31 @@ article {
       line-height: 1.4;
       margin-bottom: 5px; }
 
+.comments_section {
+  height: 100%;
+  background: #333 url("https://kathdedon.files.wordpress.com/2011/10/j-olivers-mac-and-cheese-2-golden.jpg") top left;
+  width: 26%;
+  padding: 2%;
+  float: left; }
+  .comments_section .comments_view {
+    margin: 0 0 20px 0;
+    float: left; }
+    .comments_section .comments_view:after {
+      content: "";
+      display: table;
+      clear: both; }
+    .comments_section .comments_view .comments_avatar {
+      width: 10%;
+      float: left; }
+    .comments_section .comments_view .comments_post {
+      background-color: #e6e6e6;
+      float: left;
+      margin-left: 5%;
+      display: block;
+      width: 85%; }
+      .comments_section .comments_view .comments_post p {
+        padding: 20px;
+        font-size: 0.775em;
+        line-height: 1.4; }
+
 /*# sourceMappingURL=main.css.map */
