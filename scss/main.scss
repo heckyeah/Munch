@@ -2,6 +2,7 @@
 
 $mainColor: #282539;
 $secondColor: #1e1e1e;
+$secondColorHover: #232323;
 $backgrounColor: #e6e6e6;
 $offColor: #e6e6e6;
 
@@ -11,7 +12,7 @@ body {
 	font-family: 'Open Sans', sans-serif;
 }
 
-nav {
+.control_bar {
 	background-color: $mainColor;
 	padding: 0 20px;
 	@include clearfix;
@@ -77,6 +78,27 @@ nav {
 			font-weight: 600;
 			line-height: 50px;
 			color: $offColor;
+		}
+	}
+}
+
+nav {
+	background-color: $secondColor;
+	width: 300px;
+	ul {
+		li {
+			a:link,
+			a:visited {
+				color: $offColor;
+				display: block;
+				line-height: 50px;
+				padding: 0 0 0 40px;
+				text-decoration: none;
+				font-size: 0.875em;
+			}
+			a:hover {
+				background-color: $secondColorHover;
+			}
 		}
 	}
 }

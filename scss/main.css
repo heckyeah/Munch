@@ -48,33 +48,33 @@ table {
 body {
   font-family: 'Open Sans', sans-serif; }
 
-nav {
+.control_bar {
   background-color: #282539;
   padding: 0 20px; }
-  nav:after {
+  .control_bar:after {
     content: "";
     display: table;
     clear: both; }
-  nav ul li {
+  .control_bar ul li {
     display: block;
     float: left;
     padding: 0 20px;
     line-height: 50px;
     color: #3c3853;
     font-size: 0.775em; }
-    nav ul li a:link,
-    nav ul li a:visited {
+    .control_bar ul li a:link,
+    .control_bar ul li a:visited {
       color: #e6e6e6;
       text-decoration: none;
       text-transform: uppercase; }
-    nav ul li a:hover {
+    .control_bar ul li a:hover {
       text-decoration: underline; }
-  nav form {
+  .control_bar form {
     float: left;
     margin: 0 20px; }
-    nav form .search {
+    .control_bar form .search {
       line-height: 50px; }
-      nav form .search input[type="text"] {
+      .control_bar form .search input[type="text"] {
         background: #2b283b;
         border: 1px solid #2f2c3f;
         -webkit-border-radius: 20px;
@@ -83,31 +83,31 @@ nav {
         color: #e6e6e6;
         padding: 5px 5px 5px 15px;
         font-size: 0.875em; }
-        nav form .search input[type="text"]:focus {
+        .control_bar form .search input[type="text"]:focus {
           outline: none; }
-      nav form .search ::-webkit-input-placeholder {
+      .control_bar form .search ::-webkit-input-placeholder {
         /* WebKit browsers */
         color: #3c3853;
         font-style: italic;
         text-transform: uppercase; }
-      nav form .search :-moz-placeholder {
+      .control_bar form .search :-moz-placeholder {
         /* Mozilla Firefox 4 to 18 */
         color: #3c3853;
         font-style: italic;
         text-transform: uppercase;
         opacity: 1; }
-      nav form .search ::-moz-placeholder {
+      .control_bar form .search ::-moz-placeholder {
         /* Mozilla Firefox 19+ */
         color: #3c3853;
         font-style: italic;
         text-transform: uppercase;
         opacity: 1; }
-      nav form .search :-ms-input-placeholder {
+      .control_bar form .search :-ms-input-placeholder {
         /* Internet Explorer 10+ */
         color: #3c3853;
         font-style: italic;
         text-transform: uppercase; }
-      nav form .search button {
+      .control_bar form .search button {
         background-color: #2b283b;
         padding: 6px;
         border: 1px solid #2f2c3f;
@@ -115,18 +115,32 @@ nav {
         -moz-border-radius: 20px;
         border-radius: 20px;
         color: #e6e6e6; }
-        nav form .search button:active {
+        .control_bar form .search button:active {
           color: #999; }
-        nav form .search button:focus {
+        .control_bar form .search button:focus {
           outline: none; }
-  nav .logo {
+  .control_bar .logo {
     float: right;
     margin: 0 20px; }
-    nav .logo h1 {
+    .control_bar .logo h1 {
       text-transform: uppercase;
       font-size: 2.4em;
       font-weight: 600;
       line-height: 50px;
       color: #e6e6e6; }
+
+nav {
+  background-color: #1e1e1e;
+  width: 300px; }
+  nav ul li a:link,
+  nav ul li a:visited {
+    color: #e6e6e6;
+    display: block;
+    line-height: 50px;
+    padding: 0 0 0 40px;
+    text-decoration: none;
+    font-size: 0.875em; }
+  nav ul li a:hover {
+    background-color: #232323; }
 
 /*# sourceMappingURL=main.css.map */
