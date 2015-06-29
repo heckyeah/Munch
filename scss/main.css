@@ -214,10 +214,29 @@ article {
       font-size: 0.775em;
       line-height: 1.5;
       margin-bottom: 5px; }
+    article .content .ingredients table {
+      border: 1px solid #fff;
+      width: 100%;
+      margin-bottom: 20px; }
+      article .content .ingredients table .table_heading {
+        background-color: #282539;
+        color: #fff; }
+        article .content .ingredients table .table_heading th {
+          padding: 10px 5px;
+          text-align: left;
+          font-size: 0.875em; }
+      article .content .ingredients table .table_odd {
+        background-color: #fff; }
+        article .content .ingredients table .table_odd td {
+          padding: 5px;
+          font-size: 0.875em; }
+      article .content .ingredients table .table_even td {
+        padding: 5px;
+        font-size: 0.875em; }
 
 .comments_section {
   height: 100%;
-  background: #333333 url("http://www.blissfullydelicious.com/wp-content/uploads/2011/10/pumpkin-mac-n-cheese-2-1024x778.jpg") top left;
+  background: #333 url("http://www.blissfullydelicious.com/wp-content/uploads/2011/10/pumpkin-mac-n-cheese-2-1024x778.jpg") top left;
   width: 30%;
   float: left;
   position: relative; }
@@ -315,3 +334,5 @@ article {
             padding: 10px 20px;
             margin-top: 10px;
             float: right; }
+
+/*# sourceMappingURL=main.css.map */

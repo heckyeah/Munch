@@ -180,6 +180,38 @@ article {
 				margin-bottom: 5px;
 			}
 		}
+		.ingredients {
+			table {
+				border: 1px solid #fff;
+				width: 100%;
+				margin-bottom: 20px;
+				.table_heading {
+					background-color: $mainColor;
+					color: #fff;
+					th {
+						padding: 10px 5px;
+						text-align: left;
+						font-size: 0.875em;
+					}
+				}
+				.table_odd {
+					background-color: #fff;
+					td {
+						padding: 5px;
+						font-size: 0.875em;
+						
+					}
+				}
+				.table_even {
+					
+					td {
+						padding: 5px;
+						font-size: 0.875em;
+						
+					}
+				}
+			}
+		}
 	}
 }
 .comments_section {
