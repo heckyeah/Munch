@@ -60,7 +60,7 @@ body {
     display: block;
     float: left;
     padding: 0 20px;
-    line-height: 50px;
+    line-height: 60px;
     color: #3c3853;
     font-size: 0.775em; }
     .control_bar ul li a:link,
@@ -74,7 +74,7 @@ body {
     float: left;
     margin: 0 20px; }
     .control_bar form .search {
-      line-height: 50px; }
+      line-height: 60px; }
       .control_bar form .search input[type="text"] {
         background: #2b283b;
         border: 1px solid #2f2c3f;
@@ -127,7 +127,7 @@ body {
       text-transform: uppercase;
       font-size: 2.4em;
       font-weight: 600;
-      line-height: 50px;
+      line-height: 60px;
       color: #e6e6e6; }
 
 nav {
@@ -209,37 +209,109 @@ article {
       font-size: 2em;
       font-weight: 700;
       text-transform: uppercase;
-      line-height: 1.5; }
+      line-height: 1.4; }
     article .content .content_details p {
       font-size: 0.775em;
-      line-height: 1.4;
+      line-height: 1.5;
       margin-bottom: 5px; }
 
 .comments_section {
   height: 100%;
-  background: #333 url("https://kathdedon.files.wordpress.com/2011/10/j-olivers-mac-and-cheese-2-golden.jpg") top left;
-  width: 26%;
-  padding: 2%;
-  float: left; }
-  .comments_section .comments_view {
-    margin: 0 0 20px 0;
-    float: left; }
-    .comments_section .comments_view:after {
-      content: "";
-      display: table;
-      clear: both; }
-    .comments_section .comments_view .comments_avatar {
-      width: 10%;
-      float: left; }
-    .comments_section .comments_view .comments_post {
-      background-color: #e6e6e6;
+  background: #333333 url("http://www.blissfullydelicious.com/wp-content/uploads/2011/10/pumpkin-mac-n-cheese-2-1024x778.jpg") top left;
+  width: 30%;
+  float: left;
+  position: relative; }
+  .comments_section .comments_position {
+    position: absolute;
+    bottom: 0; }
+    .comments_section .comments_position .comments_container {
+      overflow: auto;
+      height: 400px;
+      padding: 20px;
+      bottom: 0; }
+      .comments_section .comments_position .comments_container:after {
+        content: "";
+        display: table;
+        clear: both; }
+      .comments_section .comments_position .comments_container .comments_view {
+        margin: 0 0 20px 0;
+        float: left; }
+        .comments_section .comments_position .comments_container .comments_view:after {
+          content: "";
+          display: table;
+          clear: both; }
+        .comments_section .comments_position .comments_container .comments_view .comments_avatar {
+          width: 10%;
+          float: left; }
+        .comments_section .comments_position .comments_container .comments_view .comments_post {
+          background-color: #e6e6e6;
+          float: left;
+          margin-left: 5%;
+          display: block;
+          width: 77%;
+          padding: 4%;
+          -webkit-border-radius: 2px;
+          -moz-border-radius: 2px;
+          border-radius: 2px; }
+          .comments_section .comments_position .comments_container .comments_view .comments_post p {
+            font-size: 0.775em;
+            line-height: 1.4; }
+          .comments_section .comments_position .comments_container .comments_view .comments_post h5 {
+            font-weight: 600;
+            font-size: 0.875em;
+            margin-bottom: 10px; }
+    .comments_section .comments_position .buttons {
+      text-align: center; }
+      .comments_section .comments_position .buttons .show_more {
+        margin: 0 auto;
+        padding: 10px 20px;
+        background-color: #282539;
+        color: #fff;
+        border: none; }
+    .comments_section .comments_position .comment_post_area {
       float: left;
-      margin-left: 5%;
-      display: block;
-      width: 85%; }
-      .comments_section .comments_view .comments_post p {
-        padding: 20px;
-        font-size: 0.775em;
-        line-height: 1.4; }
-
-/*# sourceMappingURL=main.css.map */
+      width: 100%;
+      background-color: #e6e6e6; }
+      .comments_section .comments_position .comment_post_area:after {
+        content: "";
+        display: table;
+        clear: both; }
+      .comments_section .comments_position .comment_post_area .comment_heading {
+        background-color: #1e1e1e;
+        padding: 20px 20px; }
+        .comments_section .comments_position .comment_post_area .comment_heading:after {
+          content: "";
+          display: table;
+          clear: both; }
+        .comments_section .comments_position .comment_post_area .comment_heading .heading_text {
+          color: #fff;
+          text-transform: uppercase;
+          float: left;
+          display: block; }
+        .comments_section .comments_position .comment_post_area .comment_heading .drop_arrow {
+          float: right;
+          display: block;
+          color: #fff; }
+      .comments_section .comments_position .comment_post_area .comment_area {
+        padding-bottom: 10px; }
+        .comments_section .comments_position .comment_post_area .comment_area form {
+          padding: 5%; }
+          .comments_section .comments_position .comment_post_area .comment_area form div:after {
+            content: "";
+            display: table;
+            clear: both; }
+          .comments_section .comments_position .comment_post_area .comment_area form div textarea {
+            width: 100%;
+            height: 100px;
+            border: none;
+            padding: 2%;
+            -webkit-border-radius: 2px;
+            -moz-border-radius: 2px;
+            border-radius: 2px; }
+          .comments_section .comments_position .comment_post_area .comment_area form div button {
+            border: none;
+            background-color: #282539;
+            color: #fff;
+            padding: 10px 20px;
+            margin-top: 10px;
+            float: right; }

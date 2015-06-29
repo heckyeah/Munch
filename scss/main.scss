@@ -18,12 +18,11 @@ body {
 	padding: 0 20px;
 	@include clearfix;
 	ul {
-
 		li {
 			display: block;
 			float: left;
 			padding: 0 20px;
-			line-height: 50px;
+			line-height: 60px;
 			color: #3c3853;
 			font-size: 0.775em;
 			a:link,
@@ -31,7 +30,6 @@ body {
 				color: $offColor;
 				text-decoration: none;
 				text-transform: uppercase;
-
 			}
 			a:hover {
 				text-decoration: underline;
@@ -42,11 +40,11 @@ body {
 		float: left;
 		margin: 0 20px;
 		.search {
-			line-height: 50px;
+			line-height: 60px;
 			input[type="text"] {
 				background: #2b283b;
 				border: 1px solid #2f2c3f;
-				@include twentyround;
+				@include biground;
 				color: $offColor;
 				padding: 5px 5px 5px 15px;
 				font-size: 0.875em;
@@ -59,7 +57,7 @@ body {
 				background-color: #2b283b;
 				padding: 6px;
 				border: 1px solid #2f2c3f;
-				@include twentyround;
+				@include biground;
 				color: $offColor;
 				&:active {
 					color: #999;
@@ -77,12 +75,11 @@ body {
 			text-transform: uppercase;
 			font-size: 2.4em;
 			font-weight: 600;
-			line-height: 50px;
+			line-height: 60px;
 			color: $offColor;
 		}
 	}
 }
-
 nav {
 	background-color: $secondColor;
 	width: 20%;
@@ -173,13 +170,13 @@ article {
 				font-size: 2em;
 				font-weight: 700;
 				text-transform: uppercase;
-				line-height: 1.5;
+				line-height: 1.4;
 			}
 		}
 		.content_details {
 			p {
 				font-size: 0.775em;
-				line-height: 1.4;
+				line-height: 1.5;
 				margin-bottom: 5px;
 			}
 		}
@@ -187,31 +184,104 @@ article {
 }
 .comments_section {
 	height: 100%;
-	background: #333 url('https://kathdedon.files.wordpress.com/2011/10/j-olivers-mac-and-cheese-2-golden.jpg') top left;
-	width: 26%;
-	padding: 2%;
+	background: #333 url('http://www.blissfullydelicious.com/wp-content/uploads/2011/10/pumpkin-mac-n-cheese-2-1024x778.jpg') top left;
+	width: 30%;
 	float: left;
-	.comments_view {
-		margin: 0 0 20px 0;
-		float:left;
-		@include clearfix;
-		.comments_avatar {
-			width: 10%;
-			float: left;
-			img {
+	position: relative;
+	.comments_position {
+		position: absolute;
+		bottom: 0;
+		.comments_container {
+			overflow: auto;
+			height: 400px;;
+			padding: 20px;
+			bottom: 0;
+			@include clearfix;
+			.comments_view {
+				margin: 0 0 20px 0;
+				float: left;
+				@include clearfix;
+				.comments_avatar {
+					width: 10%;
+					float: left;
+					img {
 
+					}
+				}
+				.comments_post {
+					background-color: $backgroundColor;
+					float: left;
+					margin-left: 5%;
+					display: block;
+					width: 77%;
+					padding: 4%;
+					@include smallround;
+					p {
+						font-size: 0.775em;
+						line-height: 1.4;
+					}
+					h5 {
+						font-weight: 600;
+						font-size: 0.875em;
+						margin-bottom: 10px;
+					}
+				}
 			}
 		}
-		.comments_post {
-			background-color: $backgroundColor;
+		.buttons {
+			text-align: center;
+			.show_more {
+				margin: 0 auto;
+				padding: 10px 20px;
+				background-color: $mainColor;
+				color: #fff;
+				border: none;
+			}
+		}
+		.comment_post_area {
 			float: left;
-			margin-left: 5%;
-			display: block;
-			width: 85%;
-			p {
-				padding: 20px;
-				font-size: 0.775em;
-				line-height: 1.4;
+			width: 100%;
+			background-color: $backgroundColor;
+			@include clearfix;
+			.comment_heading {
+				background-color: $secondColor;
+				padding: 20px 20px;
+				@include clearfix;
+				.heading_text {
+					color: #fff;
+					text-transform: uppercase;
+					float: left;
+					display: block;
+				}
+				.drop_arrow {
+					float: right;
+					display: block;
+					color: #fff;
+				}
+			}
+			.comment_area {
+				padding-bottom: 10px;
+				form {
+					padding: 5%;
+					div {
+						@include clearfix;
+						textarea {
+							width: 100%;
+							height: 100px;
+							border: none;
+							padding: 2%;
+							@include smallround;
+						}
+						button {
+							border:none;
+							background-color: $mainColor;
+							color: #fff;
+							padding: 10px 20px;
+							margin-top: 10px;
+							float: right;
+						}
+					}
+				}
 			}
 		}
 	}
